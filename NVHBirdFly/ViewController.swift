@@ -20,7 +20,7 @@ class ViewController: UIViewController {
             drawJungle()
             addBird()
             flyUpAndDown()
-//            flyZigZag()
+            flyZigZag()
             playSong()
     }
 
@@ -74,7 +74,8 @@ class ViewController: UIViewController {
                         self.bird.center = CGPointMake(self.space, self.space)
                     }) {(finished) in
                         self.bird.transform = CGAffineTransformConcat(CGAffineTransformScale(self.bird.transform, -1, 1), CGAffineTransformMakeRotation(0))
-                        self.flyUpAndDown()
+                       // self.flyUpAndDown()
+                        self.flyZigZag()
                     }
                     
                 }
